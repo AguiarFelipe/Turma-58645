@@ -1,4 +1,4 @@
-// let variavelProva = undefined;
+// let variavelProva = null;
 // let variavelPreenchida = variavelProva||'Sem valor';
 // console.log(variavelPreenchida);
 
@@ -19,6 +19,5 @@ class Persona {
 }
 
 let instancia1 = new Persona('José', 'da Silva');
-
 
 console.log(instancia1.getFullname());

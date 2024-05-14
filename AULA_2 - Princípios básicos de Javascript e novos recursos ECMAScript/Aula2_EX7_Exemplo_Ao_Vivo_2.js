@@ -1,8 +1,8 @@
 let impostos = {
-    imposto1:121,
-    imposto2:233,
-    imposto3:555,
-    imposto4:200
+    imposto1:110,
+    imposto2:220,
+    imposto3:330,
+    imposto4:440
 }
 
 // let parChaveValor = Object.entries(impostos);
@@ -12,7 +12,7 @@ let impostos = {
 // console.log(apenasPropriedades);
 
 let apenasValores = Object.values(impostos);
-// console.log(apenasValores);
+console.log(apenasValores);
 
 let impostosTotais = apenasValores.reduce((valorInicial, valorAcumulado)=>valorAcumulado+valorInicial);
 console.log(impostosTotais);
