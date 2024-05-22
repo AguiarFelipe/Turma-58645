@@ -1,0 +1,61 @@
+[
+  {
+    "nome": "Gisele",
+    "sobrenome": "Almeida",
+    "idade": 27,
+    "curso": "Back-end Stack M.E.R.N"
+  },
+  {
+    "nome": "Gisele",
+    "sobrenome": "Almeida",
+    "idade": 27,
+    "curso": "Back-end Stack M.E.R.N"
+  },
+  {
+    "nome": "Gisele",
+    "sobrenome": "Almeida",
+    "idade": 27,
+    "curso": "Back-end Stack M.E.R.N"
+  },
+  {
+    "nome": "João",
+    "sobrenome": "Pedro",
+    "idade": 33,
+    "curso": "Astronomia"
+  },
+  {
+    "nome": "Marcelo",
+    "sobrenome": "Magalhães",
+    "idade": 30,
+    "curso": "Letras",
+    "password": "2dd1a5a6d2bd5eded5c7c317ecb96c18cd7efa598e0231921bbabe6e95574f51"
+  },
+  {
+    "nome": "Julio",
+    "sobrenome": "Pereira",
+    "idade": 30,
+    "curso": "Letras",
+    "password": "2dd1a5a6d2bd5eded5c7c317ecb96c18cd7efa598e0231921bbabe6e95574f51"
+  },
+  {
+    "nome": "Julio",
+    "sobrenome": "Pereira",
+    "idade": 30,
+    "curso": "Letras",
+    "password": "2dd1a5a6d2bd5eded5c7c317ecb96c18cd7efa598e0231921bbabe6e95574f51"
+  },
+  {
+    "nome": "Julio",
+    "sobrenome": "Pereira",
+    "idade": 30,
+    "curso": "Letras",
+    "password": "2dd1a5a6d2bd5eded5c7c317ecb96c18cd7efa598e0231921bbabe6e95574f51"
+  },
+  {
+    "nome": "Julio",
+    "sobrenome": "Pereira",
+    "idade": 30,
+    "curso": "Letras",
+    "password": "2dd1a5a6d2bd5eded5c7c317ecb96c18cd7efa598e0231921bbabe6e95574f51"
+  }
+]
