@@ -1,0 +1,1 @@
+console.log("Olá, estou sendo exibido a partir de um modelo do handlebars");

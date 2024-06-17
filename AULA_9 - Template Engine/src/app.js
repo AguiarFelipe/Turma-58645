@@ -1,5 +1,6 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
+const viewRouter = require('./routes/viewRouter.js');
 
 const app = express();
 
@@ -11,13 +12,6 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static(__dirname+'/public'));
 
-app.get('/', (req, res)=>{
-    let user = {
-        name:"João",
-        last_name:"Marcelo"
-    }
-
-    res.render('index', user);
-})
+app.use('/', viewRouter);
 
 app.listen(8080, ()=>{console.log("Servidor ouvindo na porta 8080")});
