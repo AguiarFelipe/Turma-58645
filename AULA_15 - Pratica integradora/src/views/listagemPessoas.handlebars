@@ -1,0 +1,14 @@
+<h1>Listagem de Pessoas</h1>
+
+{{#each pessoas}}
+<div class="card">
+    <img src="/img/{{this.imagem}}" alt="{{this.nome}}">
+    <h2>{{this.nome}} {{this.sobrenome}}</h2>
+    <p>Email: {{this.email}}</p>
+    <p>Data de Nascimento: {{this.dataNascimento}}</p>
+    <form action="/pessoas/{{this._id}}?_method=DELETE" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit">Excluir</button>
+    </form>
+</div>
+{{/each}}

@@ -1,0 +1,21 @@
+<h1>Login</h1>
+<script>
+    Swal.fire({
+        title: 'Login',
+        html: `<input type="text" id="login" class="swal2-input" placeholder="Login">
+               <input type="password" id="senha" class="swal2-input" placeholder="Senha">`,
+        confirmButtonText: 'Login',
+        allowOutsideClick: false,
+        preConfirm: () => {
+            const login = Swal.getPopup().querySelector('#login').value;
+            const senha = Swal.getPopup().querySelector('#senha').value;
+            
+            if ((!login || !senha) || (!login=="admin" && !senha=="123")) {
+                Swal.showValidationMessage(`Digite um login e senha, válidos, para continuar`);
+                return false;
+            }
+            // Redireciona para a rota de login com os parâmetros na URL
+            window.location.href = `/login?login=${login}&senha=${senha}`;
+        }
+    });
+</script>
