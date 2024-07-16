@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "mongoose": "^8.5.1"
+    "mongoose": "^8.5.1",
+    "mongoose-paginate-v2": "^1.8.2"
   }
 }
