@@ -4,9 +4,9 @@ import twilio from 'twilio';
 
 const app = express();
 
-const TWILIO_ACCOUNT_SID = 'AC438e07b9f7f22a877558b7f81885869b';
-const TWILIO_AUTH_TOKEN = '8cf6c20359e6c0944088dfaeed6dbe7a';
-const TWILIO_SMS_NUMBER = '+14695578199';
+// const TWILIO_ACCOUNT_SID = 'AC438e07b9f7f22a877558b7f81885869b';
+// const TWILIO_AUTH_TOKEN = '8cf6c20359e6c0944088dfaeed6dbe7a';
+// const TWILIO_SMS_NUMBER = '+14695578199';
 
 const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
@@ -16,8 +16,8 @@ const transport = nodemailer.createTransport({
     service:'gmail',
     port:587,
     auth:{
-        user:'f.dutraaguiar@gmail.com',
-        pass:'aakn rado fybf xueq'
+        user:'email configurado da sua aplicação',
+        pass:'password configurado da sua aplicação'
     }
 });
 
@@ -26,7 +26,7 @@ app.get('/sms', async(req, res)=>{
     let result = await client.messages.create({
         body:'Aula ao vivo do curso de BackEnd-CoderHouse',
         from:TWILIO_SMS_NUMBER,
-        to:'+5512982252565'
+        to:'Telefone para o qual será enviado o SMS'
     });
 
     res.send({status:"Sucesso", result:"SMS enviado!"});
@@ -35,9 +35,9 @@ app.get('/sms', async(req, res)=>{
 //Envio com imagens e anexos
 app.get('/mailimage', async(req, res)=>{
     let result = await transport.sendMail({
-        from:'CoderHouse-Turma58645 <f.dutraaguiar@gmail.com>',
-        to:'felipedutra_aguiar@hotmail.com',
-        subject:"Email de teste da aula ao vivo",
+        from:'Identificação de quem está enviando a mensagem <email do remetente>',
+        to:'email destino',
+        subject:"Assunto do email",
         html:`
         <div>
             <h1>Isto é um teste com imagens e anexo</h1>
@@ -56,9 +56,9 @@ app.get('/mailimage', async(req, res)=>{
 //Envio de mensagem sem anexo e/ou imagens
 app.get('/mail', async(req, res)=>{
     let result = await transport.sendMail({
-        from:'CoderHouse-Turma58645 <f.dutraaguiar@gmail.com>',
-        to:'felipedutra_aguiar@hotmail.com',
-        subject:"Email de teste da aula ao vivo",
+        from:'Identificação de quem está enviando a mensagem <email do remetente>',
+        to:'email destino',
+        subject:"Assunto do email",
         html:'<div><h1>Email de teste da aula</h1></div>',
         attachments:[]
     });

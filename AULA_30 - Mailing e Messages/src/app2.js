@@ -11,8 +11,8 @@ pass: "aakn rado fybf xueq",
 });
 app.get("/mail", async (req, res) => {
     let result = await transport.sendMail({
-        from: "f.dutraaguiar@gmail.com",
-        to: "felipedutra_aguiar@hotmail.com",
+        from: "Email de quem está enviando",
+        to: "Email de destino",
         subject: "Email de teste Isadora",
         html: `
                 <div>
