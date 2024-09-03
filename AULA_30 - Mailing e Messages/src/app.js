@@ -4,10 +4,6 @@ import twilio from 'twilio';
 
 const app = express();
 
-const TWILIO_ACCOUNT_SID = 'Account id localizado na parte inferior do dashboard de sua conta twilio';
-const TWILIO_AUTH_TOKEN = 'Auth token localizado na parte inferior do dashboard de sua conta twilio';
-const TWILIO_SMS_NUMBER = 'Número gerado no dashboard de sua conta twilio';
-
 const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
 
