@@ -4,10 +4,6 @@ import twilio from 'twilio';
 
 const app = express();
 
-const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
-
-
-
 const transport = nodemailer.createTransport({
     service:'gmail',
     port:587,
