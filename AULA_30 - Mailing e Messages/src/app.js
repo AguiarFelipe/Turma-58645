@@ -4,9 +4,9 @@ import twilio from 'twilio';
 
 const app = express();
 
-// const TWILIO_ACCOUNT_SID = 'AC438e07b9f7f22a877558b7f81885869b';
-// const TWILIO_AUTH_TOKEN = '8cf6c20359e6c0944088dfaeed6dbe7a';
-// const TWILIO_SMS_NUMBER = '+14695578199';
+const TWILIO_ACCOUNT_SID = 'Account id localizado na parte inferior do dashboard de sua conta twilio';
+const TWILIO_AUTH_TOKEN = 'Auth token localizado na parte inferior do dashboard de sua conta twilio';
+const TWILIO_SMS_NUMBER = 'Número gerado no dashboard de sua conta twilio';
 
 const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
