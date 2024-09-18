@@ -1,0 +1,9 @@
+{
+  "name": "aula_33_versionamentos",
+  "version": "1.0.0",
+  "type": "module",
+    "dependencies": {
+    "express": "^4.21.0",
+    "npm": "^10.8.3"
+  }
+}
